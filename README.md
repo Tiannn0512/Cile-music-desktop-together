@@ -7,12 +7,12 @@
 > 原始项目 By 落雪无痕（LX Music），Cile Music 修改版 By Ci Le。遵循上游开源协议（Apache-2.0）。
 
 ## 一起听是什么
+零基础小白完全用AI来完成魔改的用来和对象一起听歌嘿嘿
 
 - **房主广播、听客跟随**：房主的切歌、播放、暂停都会同步给房间内所有人，进度条每 2 秒心跳对齐
 - **跨端互通**：桌面端 ↔ 桌面端、桌面端 ↔ 安卓端（[移动版仓库](https://github.com/Tiannn0512/lx-music-mobile-together)）都可以一起听
 - **进度对齐**：切歌后听客自动对齐房主当前进度（含加载耗时补偿的追踪式对齐）；中途加入房间先同步房主的完整播放状态
 - **顶部入口**：顶栏双人图标打开一起听面板，创建/加入/退出一目了然
-- **品牌信息**：窗口标题、托盘、关于页均已改为 Cile Music，已关闭启动时自动检查更新
 
 ## 使用方法
 
@@ -25,7 +25,6 @@
 
 客户端默认连接官方演示服务器（Render 免费实例，冷启动约 20 秒）。你也可以自己搭：
 
-- 服务端代码在 [together-server](https://github.com/Tiannn0512/together-server) 仓库，纯 Node.js + ws，无数据库，单文件部署
 - 本地运行：`npm install && npm start`（默认端口 3000，支持 `PORT` 环境变量）
 - 客户端改服务器地址：[`src/renderer/core/together/index.ts`](src/renderer/core/together/index.ts) 的 `SERVER_URL` 常量，改成你的 `wss://你的域名`，重新打包即可
 
