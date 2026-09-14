@@ -1,4 +1,4 @@
-import { checkUpdate, getEnvParams, getViewPrevState, sendInited } from '@renderer/utils/ipc'
+import { getEnvParams, getViewPrevState, sendInited } from '@renderer/utils/ipc'
 
 import { proxy, isFullscreen, themeId } from '@renderer/store'
 import { appSetting } from '@renderer/store/setting'
@@ -71,7 +71,8 @@ export default () => {
       sendInited()
 
       handleListAutoUpdate()
-      if (window.lx.isProd && appSetting['common.isAgreePact']) checkUpdate()
+      // 已关闭启动时的版本更新检测（自用版本，不提示官方更新），仅保留设置页的手动检查
+      // if (window.lx.isProd && appSetting['common.isAgreePact']) checkUpdate()
     })
   })
 }

@@ -2,7 +2,7 @@
   <div :class="[$style.toolbar, { [$style.fullscreen]: isFullscreen }, appSetting['common.controlBtnPosition'] == 'left' ? $style.controlBtnLeft : $style.controlBtnRight]">
     <SearchInput />
     <TogetherButton />
-    <div v-if="appSetting['common.controlBtnPosition'] == 'left'" :class="$style.logo">L X</div>
+    <div v-if="appSetting['common.controlBtnPosition'] == 'left'" :class="$style.logo">Cile</div>
     <ControlBtns v-else />
   </div>
 </template>

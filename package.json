@@ -1,6 +1,6 @@
 {
-  "name": "lx-music-desktop",
-  "version": "2.12.2",
+  "name": "cile-music-desktop",
+  "version": "3.0.0",
   "description": "一个免费的音乐查找助手",
   "main": "./dist/main.js",
   "scripts": {
@@ -76,16 +76,16 @@
   },
   "macLanguagesInfoPlistStrings": {
     "en": {
-      "CFBundleDisplayName": "LX Music",
-      "CFBundleName": "LX Music"
+      "CFBundleDisplayName": "Cile Music",
+      "CFBundleName": "Cile Music"
     },
     "zh_CN": {
-      "CFBundleDisplayName": "LX Music",
-      "CFBundleName": "LX Music"
+      "CFBundleDisplayName": "Cile Music",
+      "CFBundleName": "Cile Music"
     },
     "zh_TW": {
-      "CFBundleDisplayName": "LX Music",
-      "CFBundleName": "LX Music"
+      "CFBundleDisplayName": "Cile Music",
+      "CFBundleName": "Cile Music"
     }
   },
   "repository": {

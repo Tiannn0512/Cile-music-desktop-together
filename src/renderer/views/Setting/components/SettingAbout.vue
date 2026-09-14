@@ -2,7 +2,10 @@
 dt#about {{ $t('setting__about') }}
 dd
   .p.small
-    | 本软件完全免费，代码已开源。开源地址：
+    strong Cile Music&nbsp;
+    | v{{ version }}（基于 LX Music v2.12.2 修改的版本）
+  .p.small
+    | 本软件完全免费，代码已开源。原始项目开源地址：
     span.hover.underline(:aria-label="$t('setting__click_open')" @click="openUrl('https://github.com/lyswhut/lx-music-desktop#readme')") https://github.com/lyswhut/lx-music-desktop
   .p.small
     | 最新版下载地址：
@@ -37,14 +40,18 @@ dd
   br
 
   .p.small
-    | By:&nbsp;
-    strong 落雪无痕
+    | 原始项目 By:&nbsp;
+    strong 落雪无痕（LX Music）
+  .p.small
+    | Cile Music 修改版 By:&nbsp;
+    strong Ci Le
 </template>
 
 <script>
 // import { ref, onBeforeUnmount } from '@common/utils/vueTools'
 import { isShowPact } from '@renderer/store'
 import { openUrl, clipboardWriteText } from '@common/utils/electron'
+import pkg from '../../../../../package.json'
 
 export default {
   name: 'SettingAbout',
@@ -56,6 +63,7 @@ export default {
       openUrl,
       clipboardWriteText,
       handleShowPact,
+      version: pkg.version,
     }
   },
 }
